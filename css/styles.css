@@ -14,3 +14,17 @@ blockquote {
   margin: 0;
   font-style: italic;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 500px;
+}
+
+input {
+  border: 1px solid lightslategray;
+  padding: 5px 10px;
+}
