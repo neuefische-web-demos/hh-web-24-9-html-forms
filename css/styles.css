@@ -15,7 +15,8 @@ blockquote {
   font-style: italic;
 }
 
-form {
+form,
+fieldset {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

@@ -7,5 +7,36 @@
     <title>HTML Forms: Demo</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h2 id="title">Private Birthday Party Picker</h2>
+    <p id="description">
+      Let's celebrate my birthday in small groups! Please give me your name,
+      your preferred party date and how many friends you will bring to my
+      private birthday party.
+    </p>
+    <form aria-labelledby="title">
+      <fieldset aria-describedby="description">
+        <legend>Enter your information</legend>
+        <label for="input-name">Name 1:</label>
+        <input id="input-name" type="text" required />
+
+        <label>Name 2:<input type="text" required /></label>
+
+        <label for="input-email">Email:</label>
+        <input id="input-email" type="email" required />
+
+        <label for="input-date">Your favorite date:</label>
+        <input id="input-date" type="date" />
+
+        <label for="select-guests">How many friends will join?</label>
+        <select id="select-guests" required>
+          <option value="">--Please choose an option--</option>
+          <option value="single">I come alone</option>
+          <option value="multiple">Maybe some</option>
+          <option value="alone">I do not have friends</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
